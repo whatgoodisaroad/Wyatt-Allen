@@ -2,12 +2,12 @@ var app = {
     roles:[ 
         "Designer", 
         "Gentleman",
+        "Scholar",
         "Innovator", 
         "Nice Guy", 
         "Problem Solver",
         "Creative Spirit", 
         "Haskeller",
-        "RSS-Feed Addict",
         "Bookworm",
         "JavaScript Ninja",
         "Leftie"

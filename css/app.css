@@ -14,7 +14,7 @@
 
 html, body {
     overflow:inherit;
-    font-family:"Nimbus-Sans", Sans-serif;
+    font-family:Sans-serif;
     margin:0;
     padding:0;
     height:100%;
@@ -25,37 +25,38 @@ html, body {
 
 header, #main, #skills, #links { 
     padding:0 48px; 
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
-    transition: all 250ms ease-in-out;
 }
 
-h1.cutoff, #main h2, .columns {
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
-    transition: all 250ms ease-in-out;
+h1.cutoff,
+h1.cutoff-inner {
+    width:100%;
+    font-size:70px;
+    line-height:70px;
 }
 
 h1.cutoff {
-    width:100%;
-    height:50px;
-    font-size:70px;
-    overflow:hidden;
     margin:0;
-    line-height:70px;
+    overflow:hidden;
+    height:45px;
     color:#222;
     padding-top:60px;
 }
 
+h1.cutoff-inner {
+    color:#fff;
+    opacity:0.2;
+    margin:-45px 0 -25px 0;
+    text-shadow:0 1px 1px #444; 
+}
+
 #main {
-    background:#3059B3 url('../img/diagonal-noise.png') fixed;
+    background:#3059B3 /*url('../img/diagonal-noise.png') fixed*/;
     padding-bottom:12px;
     color:#ccc;
     border-top:1px solid #222;
     border-bottom:1px solid #fff;
     text-shadow:none;
+    overflow:hidden;
 }
 
 #main h2, #main p { 
@@ -105,20 +106,3 @@ blockquote .attribution::before {
 #linksH2 { display:none; }
 
 .clearfix { clear:both; float:none; }
-
-@media all and (max-width: 696px) {
-    #main > div, #skills > div, #links > div { width:100%; }
-
-    .columns .thirdColumn { clear:both; width:80%; margin-right:3%; float:left; border-left:none; }
-
-    #skills li, #links li { list-style:circle; }
-
-    h1.cutoff { font-size:40px; height:42px; padding-top:20px; }
-
-    #main h2 { font-size:12pt; }
-
-    header, #main, #skills, #links { padding:0 24px; }
-    #main { padding-botom:12px !important; }
-
-    #linksH2 { display:block; }
-}
